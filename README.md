@@ -6,6 +6,7 @@
 ![GitHub License](https://img.shields.io/github/license/matfax/processor-workflow.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/matfax/processor-workflow.svg)
 ![Libraries.io for GitHub](https://img.shields.io/librariesio/github/matfax/processor-workflow.svg)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=matfax/processor-workflow)](https://dependabot.com)
 
 Processor workflow is a library that facilitates the development of an annotation processor in Java.
 It offers an efficient workflow to handle the steps of parsing annotations, extracting useful data, and then generating some java code.
