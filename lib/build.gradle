@@ -1,8 +1,14 @@
+plugins {
+    id 'com.palantir.git-version' version '0.12.0-rc2'
+}
+
 apply plugin: 'java'
 apply plugin: 'idea'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
+
+version gitVersion()
 
 dependencies {
     compile 'com.google.auto:auto-common:0.10'
