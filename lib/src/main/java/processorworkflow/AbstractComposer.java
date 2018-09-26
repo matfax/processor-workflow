@@ -16,7 +16,7 @@ public abstract class AbstractComposer<T_Model> {
         this.specs = specs;
     }
 
-    List<JavaFile> compose() {
+    public List<JavaFile> compose() {
         List<JavaFile> javaFiles = new ArrayList<>(specs.size());
         for (T_Model spec : specs) {
             javaFiles.add(compose(spec));
@@ -25,6 +25,6 @@ public abstract class AbstractComposer<T_Model> {
         return javaFiles;
     }
 
-    abstract JavaFile compose(T_Model spec);
+    protected abstract JavaFile compose(T_Model spec);
 
 }
