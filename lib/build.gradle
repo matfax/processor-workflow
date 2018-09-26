@@ -5,9 +5,8 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {
-    implementation 'com.google.auto:auto-common:0.10'
-    implementation 'com.google.auto.service:auto-service:1.0-rc4'
-    implementation 'com.google.guava:guava:26.0-jre'
-    implementation 'com.squareup:javapoet:1.11.1'
-    implementation 'org.apache.commons:commons-lang3:3.5'
+    compile 'com.google.auto:auto-common:0.10'
+    runtime 'com.google.auto.service:auto-service:1.0-rc4'
+    compile 'com.google.guava:guava:26.0-jre'
+    compile 'com.squareup:javapoet:1.11.1'
 }
