@@ -13,6 +13,6 @@ version gitVersion()
 dependencies {
     compile 'com.google.auto:auto-common:0.10'
     runtime 'com.google.auto.service:auto-service:1.0-rc4'
-    compile 'com.google.guava:guava:27.1-jre'
+    compile 'com.google.guava:guava:29.0-jre'
     compile 'com.squareup:javapoet:1.11.1'
 }
