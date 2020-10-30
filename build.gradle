@@ -1,16 +1,18 @@
 buildscript {
     repositories {
+        mavenCentral()
         jcenter()
         google()
     }
 
     dependencies {
-        classpath 'com.netflix.nebula:gradle-lint-plugin:11.0.0'
+        classpath 'com.netflix.nebula:gradle-lint-plugin:16.9.1'
     }
 }
 
 allprojects {
     repositories {
+        mavenCentral()
         jcenter()
         google()
     }

@@ -1,18 +1,36 @@
 plugins {
-    id 'com.palantir.git-version' version '0.12.0-rc2'
+    id 'me.qoomon.git-versioning' version '3.0.0'
+}
+
+version = '0.0.0-SNAPSHOT'
+gitVersioning.apply {
+    branch {
+        pattern = 'master'
+        versionFormat = '${version}'
+    }
+    branch {
+        pattern = 'feature/(?<feature>.+)'
+        versionFormat = '${feature}-SNAPSHOT'
+    }
+    branch {
+        pattern = 'pull/.+'
+        versionFormat = '${branch}-SNAPSHOT'
+    }
+    tag {
+        pattern = 'v(?<tagVersion>[0-9].*)'
+        versionFormat = '${tagVersion}'
+    }
+    commit {
+        versionFormat = '${commit.short}'
+    }
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-
-version gitVersion()
-
 dependencies {
-    compile 'com.google.auto:auto-common:0.10'
-    runtime 'com.google.auto.service:auto-service:1.0-rc4'
-    compile 'com.google.guava:guava:27.1-jre'
-    compile 'com.squareup:javapoet:1.11.1'
+    compile 'com.google.auto:auto-common:0.11'
+    runtime 'com.google.auto.service:auto-service:1.0-rc7'
+    compile 'com.google.guava:guava:30.0-jre'
+    compile 'com.squareup:javapoet:1.13.0'
 }

@@ -1,12 +1,10 @@
 # Processor Workflow
 
-[![](https://jitpack.io/v/matfax/processor-workflow.svg)](https://jitpack.io/#matfax/processor-workflow)
-[![Build Status](https://travis-ci.com/matfax/processor-workflow.svg?branch=master)](https://travis-ci.com/matfax/processor-workflow)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a45dd69a96b4c00bd72471ae529eb72)](https://www.codacy.com/app/matfax/processor-workflow?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=matfax/processor-workflow&amp;utm_campaign=Badge_Grade)
-![GitHub License](https://img.shields.io/github/license/matfax/processor-workflow.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/matfax/processor-workflow.svg)
-![Libraries.io for GitHub](https://img.shields.io/librariesio/github/matfax/processor-workflow.svg)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=matfax/processor-workflow)](https://dependabot.com)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/matfax/processor-workflow/build/master?style=for-the-badge)](https://github.com/matfax/processor-workflow/actions)
+[![JitPack](https://img.shields.io/jitpack/v/github/matfax/processor-workflow?style=for-the-badge)](https://jitpack.io/#matfax/processor-workflow)
+[![CodeFactor](https://www.codefactor.io/repository/github/matfax/processor-workflow/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/matfax/processor-workflow)
+[![GitHub License](https://img.shields.io/github/license/matfax/processor-workflow.svg?style=for-the-badge)](https://github.com/matfax/processor-workflow/blob/master/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/matfax/processor-workflow?color=9cf&style=for-the-badge)](https://github.com/matfax/processor-workflow/commits/master)
 
 Processor workflow is a library that facilitates the development of an annotation processor in Java.
 It offers an efficient workflow to handle the steps of parsing annotations, extracting useful data, and then generating some java code.
