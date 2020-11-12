@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.netflix.nebula:gradle-lint-plugin:16.15.7'
+        classpath 'com.netflix.nebula:gradle-lint-plugin:16.15.8'
     }
 }
 
